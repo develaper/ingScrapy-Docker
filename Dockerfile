@@ -18,5 +18,6 @@ RUN pip install lxml scrapy scrapyjs
 # Define environment variable
 #ENV NAME world
 
+WORKDIR /app/accounts
 #Run app.py when the container launches
-CMD ["python", "app.py"]
+CMD ["scrapy", "crawl", "spider"]
