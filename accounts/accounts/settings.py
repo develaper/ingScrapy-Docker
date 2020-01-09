@@ -33,7 +33,8 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+COOKIES_ENABLED = True
+COOKIES_DEBUG = True
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -43,10 +44,11 @@ ROBOTSTXT_OBEY = True
 #   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
 #   'Accept-Language': 'en',
 #}
-USER_AGENT = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0'
+#USER_AGENT = 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0'
 #USER_AGENT = 'books (+http://www.yourdomain.com)'
 DEFAULT_REQUEST_HEADERS = {
-    'Referer': 'https://ing.ingdirect.es/pfm/'
+    #'Referer': 'https://ing.ingdirect.es/app-login/'
+    #'Referer': 'https://ing.ingdirect.es/pfm/'
 }
 
 # Enable or disable spider middlewares
